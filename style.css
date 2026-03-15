@@ -1,17 +1,21 @@
 .wrapper {
-  width: 450px;       /* largeur fixe du téléphone */
-  max-width: 100%;    /* ne dépasse pas la largeur du parent */
-  margin: 0 auto;     /* centrer */
+  width: 90%;       /* prend 90% du parent forum */
+  max-width: 320px; /* ne dépasse pas 320px */
+  margin: 0 auto;   /* centre horizontalement */
 }
 
 .PHONE {
-height: auto;
-box-sizing: border-box;
-margin:auto; width:100%; border-radius:50px; overflow:hidden; border:2px solid grey; 
-background-image:url('https://img.freepik.com/premium-vector/black-white-overlay-snowfall-vector-decoration_569013-2317.jpg');
-background-size:cover; background-position:center; padding:12px;
-font-family:Arial;
-box-shadow: 7px 10px 10px #C7C7C7;
+  width: 100%;      /* occupe toute la wrapper */
+  border-radius: 50px;
+  overflow: hidden;
+  border: 2px solid grey;
+  background-image: url('https://img.freepik.com/premium-vector/black-white-overlay-snowfall-vector-decoration_569013-2317.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 12px;
+  font-family: Arial;
+  box-shadow: 7px 10px 10px #C7C7C7;
+  box-sizing: border-box;
 }
 
 .REFLECT {
