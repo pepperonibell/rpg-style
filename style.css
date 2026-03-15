@@ -1,21 +1,9 @@
-.wrapper {
-  width: 90%;
-  max-width: 320px;
-  margin: 0 auto;
-}
-
 .PHONE {
-  width: 100%;
-  border-radius: 50px;
-  overflow: hidden;
-  border: 2px solid grey;
-  background-image: url('https://img.freepik.com/premium-vector/black-white-overlay-snowfall-vector-decoration_569013-2317.jpg');
-  background-size: cover;
-  background-position: center;
-  padding: 3%; 
-  font-family: Arial;
-  box-shadow: 7px 10px 10px #C7C7C7;
-  box-sizing: border-box;
+  margin:auto; width:230px; border-radius:50px; overflow:hidden; border:2px solid grey; 
+background-image:url('https://img.freepik.com/premium-vector/black-white-overlay-snowfall-vector-decoration_569013-2317.jpg');
+background-size:cover; background-position:center; padding:12px;
+font-family:Arial;
+box-shadow: 7px 10px 10px #C7C7C7;
 }
 
 .REFLECT {
@@ -27,15 +15,7 @@ pointer-events:none; z-index:10; border-radius:50px;
   position:relative; width:100%;
 }
 .inPHOTO {
-  width:100%; 
-  height:auto; 
-  object-fit:cover; 
-  display:block; 
-  border-radius: inherit;
-  border-left:1px 
-  solid grey; 
-  z-index:1; 
-  position:relative;
+  width:100%; height:250px; object-fit:cover; display:block; border-radius:35px 35px 0 0; border-left:1px solid grey; z-index:1; position:relative;
 }
 
 .NOTCH {
@@ -56,65 +36,52 @@ pointer-events:none; z-index:10; border-radius:50px;
   margin-bottom:10px;
 }
 .NAME {
-  font-size:22px;font-weight:700;
+  font-size:15px;font-weight:700;
 }
 .AGE {
-  font-size:18px;font-weight:400;color:#555;
+  font-size:13px;font-weight:400;color:#555;
 }
 .CITY {
-  margin-top:6px; display:block; font-size:13px; color:#777; line-height:1.4;
+  margin-top:6px; display:block; font-size:12px; color:#777; line-height:1.4;
 }
 
 .boxINTEREST {
-  margin-bottom:8px; padding:8px; border-radius:10px; display:flex; align-items:flex-start; gap:6px;
+  margin-bottom:8px; padding:8px; border-radius:10px; display:flex; align-items:flex-start; gap:6px; line-height:0.9;
 }
 .topLINE {
-  font-size:12px;
+  font-size:11px;
 }
 .botLINE {
-  font-size:14px; font-weight:700;
+  font-size:12px; font-weight:600;
 }
 .titleDESCR {
-  font-size:16px;font-weight:700;
+  font-size:13px;font-weight:700;
 }
 .cntDESCR {
-  margin-top:10px; display:block; font-size:13px; color:#666666; line-height:1.4;
+  margin-top:10px; display:block; font-size:11px; color:#666666; line-height:1.4;
 }
 
 
 .boxBUBBLE
 {
-  display:flex; flex-wrap: wrap; justify-content:center; gap:15px; margin-top:12px;
+  display:flex; flex-wrap: wrap; justify-content:center; gap:5px; margin-top:15px; margin-bottom:20px;
 }
 
 .BUBBLE {
-  height:10px; 
-  padding: 0.6em 1em;
-  background:white; 
-  border-radius:20px; 
-  box-shadow: 0px 1px 2px #F2F2F2; 
-  border:2px solid #E8E8E8; 
-  display:flex; 
-  align-items:center; 
-  justify-content:center; 
-  font-size: 0.9em;
-  color:#666666;
-}
-
-.boxLIKES {
-  display:flex; justify-content:center; gap:15px; margin-top:12px;
+  height:8px; padding: 8px; background:white; border-radius:20px; box-shadow: 0px 1px 2px #F2F2F2; border:2px solid #E8E8E8; display:flex; align-items:center; justify-content:center; font-size:11px;color:#666666;
 }
 
 .BUTTON {
-  width: 2.5em; 
-  height: 2.5em; 
+  width:40px; 
+  height:40px; 
   background:white; 
   border-radius:50%; 
   border:1px solid #E8E8E8; 
   box-shadow: 1px 1px 7px #E8E8E8; 
-  display:flex; align-items:center; 
+  display:flex; 
+  align-items:center; 
   justify-content:center; 
-  font-size:1em;
+  font-size:14px;
 }
 
 .container{
@@ -142,17 +109,44 @@ pointer-events:none; z-index:10; border-radius:50px;
 .gallery {
   width: 100%;
   height: 100%;
-  aspect-ratio: 1 / 1;   /* le conteneur est un carré */
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows:1fr 1fr 1fr;
-  gap: 5px;
-  background:white;
-  border-radius:50px;
+  background:#F2F2F2;
+  border-radius:35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .gallery img {
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 70%;
   object-fit: cover;
+  border-radius: 8px;
+  border-bottom: 1px solid #C2C2C2;
+}
+
+.overlayBUTTONS {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: -75px;
+}
+
+/* Réutiliser le style des boutons existants */
+.overlayBUTTONS .BUTTON {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #E8E8E8;
+  box-shadow: 1px 1px 7px #E8E8E8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  background: white;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.overlayBUTTONS .BUTTON:hover {
+  transform: scale(1.1); /* petit effet hover */
 }
