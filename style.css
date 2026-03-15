@@ -1,18 +1,18 @@
 .wrapper {
-  width: 90%;       /* prend 90% du parent forum */
-  max-width: 320px; /* ne dépasse pas 320px */
-  margin: 0 auto;   /* centre horizontalement */
+  width: 90%;
+  max-width: 320px;
+  margin: 0 auto;
 }
 
 .PHONE {
-  width: 100%;      /* occupe toute la wrapper */
+  width: 100%;
   border-radius: 50px;
   overflow: hidden;
   border: 2px solid grey;
   background-image: url('https://img.freepik.com/premium-vector/black-white-overlay-snowfall-vector-decoration_569013-2317.jpg');
   background-size: cover;
   background-position: center;
-  padding: 12px;
+  padding: 3%;
   font-family: Arial;
   box-shadow: 7px 10px 10px #C7C7C7;
   box-sizing: border-box;
@@ -27,7 +27,15 @@ pointer-events:none; z-index:10; border-radius:50px;
   position:relative; width:100%;
 }
 .inPHOTO {
-  width:100%; height:320px; object-fit:cover; display:block; border-radius:35px 35px 0 0; border-left:1px solid grey; z-index:1; position:relative;
+  width:100%; 
+  height:auto; 
+  object-fit:cover; 
+  display:block; 
+  border-radius: inherit;
+  border-left:1px 
+  solid grey; 
+  z-index:1; 
+  position:relative;
 }
 
 .NOTCH {
@@ -80,14 +88,34 @@ pointer-events:none; z-index:10; border-radius:50px;
 }
 
 .BUBBLE {
-  height:10px; padding: 10px; background:white; border-radius:20px; box-shadow: 0px 1px 2px #F2F2F2; border:2px solid #E8E8E8; display:flex; align-items:center; justify-content:center; font-size:13px;color:#666666;
+  height:10px; 
+  padding: 0.8em 1em;
+  background:white; 
+  border-radius:20px; 
+  box-shadow: 0px 1px 2px #F2F2F2; 
+  border:2px solid #E8E8E8; 
+  display:flex; 
+  align-items:center; 
+  justify-content:center; 
+  font-size: 0.8em;
+  color:#666666;
 }
 
 .boxLIKES {
   display:flex; justify-content:center; gap:15px; margin-top:12px;
 }
 
-.BUTTON {width:40px; height:40px; background:white; border-radius:50%; border:1px solid #E8E8E8; box-shadow: 1px 1px 7px #E8E8E8; display:flex; align-items:center; justify-content:center; font-size:15px;}
+.BUTTON {
+  width: 2.5em; 
+  height: 2.5em; 
+  background:white; 
+  border-radius:50%; 
+  border:1px solid #E8E8E8; 
+  box-shadow: 1px 1px 7px #E8E8E8; 
+  display:flex; align-items:center; 
+  justify-content:center; 
+  font-size:1em;
+}
 
 
 .PHONE {
