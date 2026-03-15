@@ -1,0 +1,132 @@
+.PHONE {
+  margin:auto; width:320px; border-radius:50px; overflow:hidden; border:2px solid grey; 
+background-image:url('https://img.freepik.com/premium-vector/black-white-overlay-snowfall-vector-decoration_569013-2317.jpg');
+background-size:cover; background-position:center; padding:12px;
+font-family:Arial;
+box-shadow: 7px 10px 10px #C7C7C7;
+}
+
+.REFLECT {
+  position:absolute; top:0; left:0; width:100%; height:100%; background:linear-gradient(135deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 50%);
+pointer-events:none; z-index:10; border-radius:50px;
+}
+
+.boxPHOTO {
+  position:relative; width:100%;
+}
+.inPHOTO {
+  width:100%; height:320px; object-fit:cover; display:block; border-radius:35px 35px 0 0; border-left:1px solid grey; z-index:1; position:relative;
+}
+
+.NOTCH {
+  position:absolute; top:-15px; left:50%; transform:translateX(-50%); width:120px; height:30px; background:black; border-radius:0 0 20px 20px; z-index:2;
+}
+
+.BLUEDOT {
+  position:absolute; top:50%; left:20px; transform:translateY(-50%); width:8px; height:8px; background:#000F3D; border-radius:50%
+}
+
+/*Partie du bas avec la description profil*/
+
+.boxPROFILE {
+  background:white; padding:12px; border-radius:0 0 35px 35px; margin-top:0px; border-left:1px solid grey; position:relative; z-index:1;
+}
+
+.blocNM {
+  margin-bottom:10px;
+}
+.NAME {
+  font-size:22px;font-weight:700;
+}
+.AGE {
+  font-size:18px;font-weight:400;color:#555;
+}
+.CITY {
+  margin-top:6px; display:block; font-size:13px; color:#777; line-height:1.4;
+}
+
+.boxINTEREST {
+  margin-bottom:8px; padding:8px; border-radius:10px; display:flex; align-items:flex-start; gap:6px;
+}
+.topLINE {
+  font-size:12px;
+}
+.botLINE {
+  font-size:14px; font-weight:700;
+}
+.titleDESCR {
+  font-size:16px;font-weight:700;
+}
+.cntDESCR {
+  margin-top:10px; display:block; font-size:13px; color:#666666; line-height:1.4;
+}
+
+
+.boxBUBBLE
+{
+  display:flex; flex-wrap: wrap; justify-content:center; gap:15px; margin-top:12px;
+}
+
+.BUBBLE {
+  height:10px; padding: 10px; background:white; border-radius:20px; box-shadow: 0px 1px 2px #F2F2F2; border:2px solid #E8E8E8; display:flex; align-items:center; justify-content:center; font-size:13px;color:#666666;
+}
+
+.boxLIKES {
+  display:flex; justify-content:center; gap:15px; margin-top:12px;
+}
+
+.BUTTON {width:40px; height:40px; background:white; border-radius:50%; border:1px solid #E8E8E8; box-shadow: 1px 1px 7px #E8E8E8; display:flex; align-items:center; justify-content:center; font-size:15px;}
+
+
+.PHONE {
+  margin:auto; width:320px; border-radius:50px; overflow:hidden; border:2px solid grey; 
+background-image:url('https://img.freepik.com/premium-vector/black-white-overlay-snowfall-vector-decoration_569013-2317.jpg');
+background-size:cover; background-position:center; padding:12px;
+font-family:Arial;
+box-shadow: 7px 10px 10px #C7C7C7;
+}
+
+.REFLECT {
+  position:absolute; top:0; left:0; width:100%; height:100%; background:linear-gradient(135deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 50%);
+pointer-events:none; z-index:10; border-radius:50px;
+}
+
+.container{
+  position: relative;
+  overflow: hidden;
+}
+
+/* galerie cachée */
+.overlay{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  transform:translateX(100%);
+  transition:transform .4s ease;
+  z-index:10;
+}
+
+/* hover */
+.container:hover .overlay{
+  transform:translateX(0);
+}
+
+.gallery {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1 / 1;   /* le conteneur est un carré */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows:1fr 1fr 1fr;
+  gap: 5px;
+  background:white;
+  border-radius:50px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
