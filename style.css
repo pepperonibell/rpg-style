@@ -130,3 +130,7 @@ pointer-events:none; z-index:10; border-radius:50px;
   height: 100%;
   object-fit: cover;
 }
+.wrapper {
+  max-width: 450px; /* ou la taille que tu veux */
+  margin: 0 auto; /* centrer le bloc */
+}
