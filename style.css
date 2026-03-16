@@ -198,7 +198,6 @@
   display: flex;
   justify-content: center;
   gap: 12px;
-  margin-top: -60px;
 }
 .overlayBUTTONS .BUTTON {
   width: 40px;
