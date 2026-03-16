@@ -9,7 +9,6 @@
   background-image:url('https://img.freepik.com/premium-vector/black-white-overlay-snowfall-vector-decoration_569013-2317.jpg');
   background-size:cover; 
   background-position:center; 
-  padding:12px;
   font-family:Arial;
   box-shadow: 4px 8px 10px #C7C7C7;
 }
@@ -195,9 +194,14 @@
   border-bottom: 1px solid #C2C2C2;
 }
 .overlayBUTTONS {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   justify-content: center;
   gap: 12px;
+  z-index: 20;
 }
 .overlayBUTTONS .BUTTON {
   width: 40px;
