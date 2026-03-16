@@ -19,17 +19,17 @@
 
 .bgBLUR {
   position: absolute;
-  top: 12px;
+  top: 24px;
   left: 12px;
-  width: calc(100% - 24px);
-  height: calc(100% - 24px);
+  width: 90%;
+  height: 92%;
   background-size: cover;
   background-position: center;
-  filter: blur(6px);
-  border-radius: 40px;
+  filter: blur(4px);
+  border-radius: 35px;
   z-index: 1;
   pointer-events: none;
-  box-shadow: inset 0 0 0 15px black;
+  box-shadow: inset 0 0 0 4px black;
 }
 
 .bgPINK {
@@ -38,7 +38,7 @@
   border-radius: 35px;
   overflow: hidden;
   position: relative;
-  background: rgba(94, 52, 93, 0.7);  /* semi-transparent */
+  background: rgba(105, 69, 93, 0.85);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -76,6 +76,7 @@
   margin-top: 10px;
   font-size: 12px;
   color: white;
+  text-align:center;
   text-shadow: 0px 0px 2px rgba(0,0,0,0.3);
   z-index: 2;
 }
@@ -152,7 +153,7 @@
   border:none;
   padding:10px 5px;
   border-radius:50px;
-  background: linear-gradient(135deg, #CC85BC, #FFB094); 
+  background: linear-gradient(135deg, #CC85BC, #DEAD99); 
   color:white;
   font-weight:500;
   font-size:11px;
