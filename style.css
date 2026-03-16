@@ -25,7 +25,6 @@
   z-index:30; 
   border-radius:50px;
 }
-
 .boxPHOTO {
   position:relative; 
   width:100%;
@@ -41,6 +40,7 @@
   position:relative;
 }
 
+/*Camera en haut du telephone*/
 .NOTCH {
   position:absolute; 
   top:-15px; 
@@ -52,56 +52,96 @@
   border-radius:0 0 20px 20px; 
   z-index:20;
 }
-
 .BLUEDOT {
-  position:absolute; top:50%; left:20px; transform:translateY(-10%); width:8px; height:8px; background:#000F3D; border-radius:50%
+  position:absolute; 
+  top:50%; 
+  left:20px; 
+  transform:translateY(-10%); 
+  width:8px; 
+  height:8px; 
+  background:#000F3D; 
+  border-radius:50%
 }
 
 /*Partie du bas avec la description profil*/
-
 .boxPROFILE {
-  background:white; padding:12px; border-radius:0 0 35px 35px; margin-top:0px; border-left:1px solid grey; position:relative; z-index:1;
+  background:white; 
+  padding:12px; 
+  border-radius:0 0 35px 35px; 
+  margin-top:0px; 
+  border-left:1px solid grey; 
+  position:relative; 
+  z-index:1;
 }
-
 .blocNM {
   margin-bottom:10px;
 }
 .NAME {
-  font-size:14px;font-weight:700;
+  font-size:14px;
+  font-weight:700;
 }
 .AGE {
-  font-size:12px;font-weight:400;color:#555;
+  font-size:12px;
+  font-weight:400;
+  color:#555;
 }
 .CITY {
-  margin-top:6px; display:block; font-size:12px; color:#777; line-height:1.4;
+  margin-top:6px; 
+  display:block; 
+  font-size:12px; 
+  color:#777; 
+  line-height:1.4;
 }
 
 .boxINTEREST {
-  margin-bottom:8px; padding:8px; border-radius:10px; display:flex; align-items:flex-start; gap:6px; line-height:0.9;
+  margin-bottom:8px; 
+  padding:8px; 
+  border-radius:10px; 
+  display:flex; 
+  align-items:flex-start; 
+  gap:6px; 
+  line-height:0.9;
 }
 .topLINE {
   font-size:11px;
 }
 .botLINE {
-  font-size:12px; font-weight:600;
+  font-size:12px; 
+  font-weight:600;
 }
 .titleDESCR {
-  font-size:13px;font-weight:700;
+  font-size:13px;
+  font-weight:700;
 }
 .cntDESCR {
-  margin-top:10px; display:block; font-size:11px; color:#666666; line-height:1.4;
+  margin-top:10px; 
+  display:block; 
+  font-size:11px; 
+  color:#666666; 
+  line-height:1.4;
 }
-
-
 .boxBUBBLE
 {
-  display:flex; flex-wrap: wrap; justify-content:center; gap:5px; margin-top:15px; margin-bottom:20px;
+  display:flex; 
+  flex-wrap: wrap; 
+  justify-content:center; 
+  gap:5px; 
+  margin-top:15px; 
+  margin-bottom:20px;
 }
-
 .BUBBLE {
-  height:8px; padding: 8px; background:white; border-radius:20px; box-shadow: 0px 1px 2px #F2F2F2; border:2px solid #E8E8E8; display:flex; align-items:center; justify-content:center; font-size:11px;color:#666666;
+  height:8px; 
+  padding: 8px; 
+  background:white; 
+  border-radius:20px; 
+  box-shadow: 0px 1px 2px #F2F2F2; 
+  border:2px solid #E8E8E8; 
+  display:flex; 
+  align-items:center; 
+  justify-content:center; 
+  font-size:11px;
+  color:#666666;
 }
-
 .BUTTON {
   width:40px; 
   height:40px; 
@@ -114,13 +154,10 @@
   justify-content:center; 
   font-size:14px;
 }
-
 .container{
   position: relative;
   overflow: hidden;
 }
-
-/* galerie cachée */
 .overlay{
   position:absolute;
   inset:0;
@@ -133,11 +170,11 @@
   z-index:10;
 }
 
-/* hover */
 .container:hover .overlay{
   transform:translateX(0);
 }
 
+/* Photo tinder qui hover par-dessus */
 .gallery {
   width:100%;
   height:100%;
@@ -157,15 +194,12 @@
   border-radius: 8px;
   border-bottom: 1px solid #C2C2C2;
 }
-
 .overlayBUTTONS {
   display: flex;
   justify-content: center;
   gap: 12px;
   margin-top: -60px;
 }
-
-/* Réutiliser le style des boutons existants */
 .overlayBUTTONS .BUTTON {
   width: 40px;
   height: 40px;
@@ -180,7 +214,6 @@
   cursor: pointer;
   transition: transform 0.2s ease;
 }
-
 .overlayBUTTONS .BUTTON:hover {
-  transform: scale(1.1); /* petit effet hover */
+  transform: scale(1.1);
 }
