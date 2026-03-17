@@ -6,6 +6,8 @@
   height:564px;
   background:grey;
   border-radius:50px;
+  border:5px solid lightgrey;
+  box-shadow: 0 3px 8px 2px rgba(112, 112, 112, 0.3);
 }
 .intPHONE {
   position:relative;
