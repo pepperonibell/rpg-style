@@ -9,23 +9,20 @@
 }
 .intPHONE {
   display: flex;
-  justify-content: center;
+  align-items: center;
   width:260px;
   height:550px;
   background: linear-gradient(35deg, #E8E8E8, white);
   border: 6px solid black;
   border-radius:50px;
-}
-
-.topDETAIL{
-  
+  flex-direction: column;
+  padding: 5px;
 }
 
 .header-container{
   display: flex;
-  gap: 40px;
-  position: absolute;
-  top: 35px;
+  gap: 30px;
+  margin-top:20px;
 }
 
 .bulleDETAIL{
@@ -38,7 +35,7 @@
   font-family:comic sans ms;
   padding-bottom:2px;
   background:white;
-  color: ddarkgrey;
+  color: darkgrey;
   border-radius:100px;
   box-shadow: 0 0 3px 1px rgba(112, 112, 112, 0.1);
 }
@@ -46,7 +43,6 @@
 .detail-header div:nth-child(3){
   width:20px;
   letter-spacing:-1px;
-  padding-bottom:0px;
 }
 
 .profileDETAIL{
@@ -54,47 +50,53 @@
   font-family:arial;
   font-size:10px;
   font-weight: bold;
-  margin-top:-4px;
+  margin-top:-5px;
   letter-spacing: -0.3px;
   line-height:13px;
 }
 
 .photo-container {
+  margin-top:15px;
   flex-direction: column;
   width:250px;
   height:250px;
-  position: relative;
   overflow: hidden;
-  display: inline-block;
+  display: grid;
   border-radius:20px;
-  margin-top:50px;
   box-shadow: 0px 4px 7px rgba(0,0,0,0.1);
   transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.photo-container img, 
+.photo-gradient, 
+.text-photo, 
+.tinder-like, 
+.meter{
+  grid-area: 1 / 1;
 }
 .photo-container:hover {
   transform: translateX(60px) translateY(-30px) rotate(8deg) scale(1.05);
 }
 .photo-container img {
   display: flex;
-  position:absolute;
   width:100%;
   height:100%;
   object-fit: cover;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  z-index: 1;
 }
 
 .photo-container .photo-gradient{
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  margin-top: 90px;
   width: 100%;
   height: 50%;
   background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
   pointer-events: none;
   opacity: 1;
   transition: opacity 0.2s ease;
+  z-index: 2;
 }
 .photo-container:hover .photo-gradient {
   opacity: 0.5;
@@ -102,14 +104,15 @@
 
 .text-photo {
   font-family:arial;
+  text-align:left;
   font-size:15px;
-  position:absolute;
-  bottom: 10px;
-  left: 15px;
+  margin-top: 195px;
+  margin-left: 18px;
   color:white;
   line-height:1.6;
   opacity: 1;
   transition: opacity 0.2s ease;
+  z-index: 3;
 }
 .photo-container:hover .text-photo {
   opacity: 0;
@@ -126,11 +129,11 @@
 
 .tinder-like{
   font-size:30px;
+  margin-left:125px;
+  margin-top:35px;
+  width:80px;
+  height:40px;
   transform: rotate(25deg);
-  text-align:center;
-  position:absolute;
-  bottom: 170px;
-  left: 145px;
   padding:6px;
   border-radius:8px;
   border:3px solid seagreen;
@@ -138,24 +141,28 @@
   font-family: Verdana, sans-serif;
   opacity: 0;
   transition: opacity 0.2s ease;
+  z-index: 4;
 }
 .photo-container:hover .tinder-like {
   opacity: 1;
 }
 .meter {
   font-size:8px;
-  text-align:center;
-  width:45px;
-  position:absolute;
-  bottom: 222px;
-  left: 185px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left:180px;
+  margin-top:10px;
+  width:50px;
+  height:15px;
   padding:4px;
   border-radius:50px;
-  background: rgba(0,0,0,0.4);
-  color:white;
+  background: rgba(0,0,0,0.2);
+  color:#D1D1D1;
   font-family: Verdana, sans-serif;
   opacity: 1;
   transition: opacity 0.2s ease;
+  z-index: 5;
 }
 .photo-container:hover .meter {
   opacity: 0;
@@ -167,9 +174,8 @@
 }
 
 .box-bot-part{
-    position: absolute;
-    margin-left:18px;
-    top: 320px;
+    margin-top: 10px;
+    place-items: center; 
     flex-direction: column;
     display: flex;
 }
@@ -231,10 +237,9 @@
 }
 
 .tinder-galerie {
-  position:absolute;
-  top:175px;
-  left:-9px;
-  width: 260px;
+  position:relative;
+  bottom: -10px;
+  width: 269px;
   height:70px;
   border-radius: 0 0 42px 42px;
   overflow: hidden;
@@ -252,12 +257,10 @@
 }
 
 .black-rec {
-  position:absolute;
   display:flex;
-  top:235px;
-  left:80px;
   width:90px;
   height:3.4px;
   background-color:black;
   border-radius:10px;
+  z-index: 10;
 }
