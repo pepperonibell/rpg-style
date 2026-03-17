@@ -197,12 +197,11 @@
   margin-top:1px;
 }
 .overlayBUTTONS {
-  position:absolute;
+  margin-top:-90px;
+  margin-left:-20px;
   display: flex;
   justify-content: center;
   z-index:20;
-  margin-top:-90px;
-  margin-left:50px;
   gap:8px;
   cursor: pointer;
 }
