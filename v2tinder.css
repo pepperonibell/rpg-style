@@ -1,0 +1,263 @@
+.extPHONE {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  width:274px;
+  height:564px;
+  background:grey;
+  border-radius:50px;
+}
+.intPHONE {
+  display: flex;
+  justify-content: center;
+  width:260px;
+  height:550px;
+  background: linear-gradient(35deg, #E8E8E8, white);
+  border: 6px solid black;
+  border-radius:50px;
+}
+
+.topDETAIL{
+  
+}
+
+.header-container{
+  display: flex;
+  gap: 40px;
+  position: absolute;
+  top: 35px;
+}
+
+.bulleDETAIL{
+  width:22px;
+  height:20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family:comic sans ms;
+  padding-bottom:2px;
+  background:white;
+  color: ddarkgrey;
+  border-radius:100px;
+  box-shadow: 0 0 3px 1px rgba(112, 112, 112, 0.1);
+}
+
+.detail-header div:nth-child(3){
+  width:20px;
+  letter-spacing:-1px;
+  padding-bottom:0px;
+}
+
+.profileDETAIL{
+  text-align:center;
+  font-family:arial;
+  font-size:10px;
+  font-weight: bold;
+  margin-top:-4px;
+  letter-spacing: -0.3px;
+  line-height:13px;
+}
+
+.photo-container {
+  flex-direction: column;
+  width:250px;
+  height:250px;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  border-radius:20px;
+  margin-top:50px;
+  box-shadow: 0px 4px 7px rgba(0,0,0,0.1);
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.photo-container:hover {
+  transform: translateX(60px) translateY(-30px) rotate(8deg) scale(1.05);
+}
+.photo-container img {
+  display: flex;
+  position:absolute;
+  width:100%;
+  height:100%;
+  object-fit: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.photo-container .photo-gradient{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+  pointer-events: none;
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
+.photo-container:hover .photo-gradient {
+  opacity: 0.5;
+}
+
+.text-photo {
+  font-family:arial;
+  font-size:15px;
+  position:absolute;
+  bottom: 10px;
+  left: 15px;
+  color:white;
+  line-height:1.6;
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
+.photo-container:hover .text-photo {
+  opacity: 0;
+}
+
+.tinderJOB{
+  font-size:10px;
+}
+
+.custom-briefcase{
+  font-size: 9px;
+  margin-right: 7px;
+}
+
+.tinder-like{
+  font-size:30px;
+  transform: rotate(25deg);
+  text-align:center;
+  position:absolute;
+  bottom: 170px;
+  left: 145px;
+  padding:6px;
+  border-radius:8px;
+  border:3px solid seagreen;
+  color:seagreen;
+  font-family: Verdana, sans-serif;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+.photo-container:hover .tinder-like {
+  opacity: 1;
+}
+.meter {
+  font-size:8px;
+  text-align:center;
+  width:45px;
+  position:absolute;
+  bottom: 222px;
+  left: 185px;
+  padding:4px;
+  border-radius:50px;
+  background: rgba(0,0,0,0.4);
+  color:white;
+  font-family: Verdana, sans-serif;
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
+.photo-container:hover .meter {
+  opacity: 0;
+}
+
+.custom-paper-plane{
+  font-size: 7px;
+  margin-right: 7px;
+}
+
+.box-bot-part{
+    position: absolute;
+    margin-left:18px;
+    top: 320px;
+    flex-direction: column;
+    display: flex;
+}
+
+.about-container{
+  width:235px;
+  font-family:arial;
+  text-align:justify;
+  display: block;
+  font-size:10px;
+  letter-spacing:-0.5px;
+  line-height:2;
+}
+
+.about-title{
+  font-size:11px;
+  font-weight:bold;
+}
+
+.about-descript{
+  color:grey;
+  line-height:1.3;
+}
+
+.boxBUBBLE
+{
+  position:relative;
+  margin-top:15px;
+  left:-9px;
+  width:260px;
+  display:flex; 
+  flex-wrap: wrap;
+  justify-content:center; 
+  gap:5px;
+}
+.BUBBLE {
+  height:8px; 
+  padding: 5px; 
+  background:white; 
+  border-radius:20px;
+  border:1px solid #E8E8E8; 
+  display:flex; 
+  align-items:center; 
+  justify-content:center; 
+  color:#666666;
+  font-family:arial;
+  font-size:9px;
+}
+
+.tinder-images img{
+  width:60px;
+  margin-right:5px;
+  height:80px;
+  object-fit: cover;
+  justify-content: center;
+  align-items: center;
+  border-radius:15px;
+  border:1px lightgrey solid;
+}
+
+.tinder-galerie {
+  position:absolute;
+  top:175px;
+  left:-9px;
+  width: 260px;
+  height:70px;
+  border-radius: 0 0 42px 42px;
+  overflow: hidden;
+  display:flex;
+  border-bottom: 1px solid grey;
+}
+
+.tinder-images {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.tinder-galerie:hover .tinder-images {
+  transform: translateX(-90px); /* défile vers la gauche */
+}
+
+.black-rec {
+  position:absolute;
+  display:flex;
+  top:235px;
+  left:80px;
+  width:90px;
+  height:3.4px;
+  background-color:black;
+  border-radius:10px;
+}
