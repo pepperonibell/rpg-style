@@ -8,6 +8,7 @@
   border-radius:50px;
 }
 .intPHONE {
+  position:relative;
   display: flex;
   align-items: center;
   width:260px;
@@ -22,7 +23,7 @@
 .header-container{
   display: flex;
   gap: 30px;
-  margin-top:20px;
+  padding-top:20px;
 }
 
 .bulleDETAIL{
@@ -202,7 +203,6 @@
 
 .boxBUBBLE
 {
-  position:relative;
   margin-top:15px;
   left:-9px;
   width:260px;
@@ -237,8 +237,8 @@
 }
 
 .tinder-galerie {
-  position:relative;
-  bottom: -10px;
+  position:absolute;
+  bottom: 0px;
   width: 269px;
   height:70px;
   border-radius: 0 0 42px 42px;
@@ -257,6 +257,7 @@
 }
 
 .black-rec {
+  margin-top:70px;
   display:flex;
   width:90px;
   height:3.4px;
