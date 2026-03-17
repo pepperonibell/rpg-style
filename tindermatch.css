@@ -6,7 +6,7 @@
   overflow:hidden;
   position: relative;
   border:2px solid grey;
-  background-image:url('https://img.freepik.com/premium-vector/black-white-overlay-snowfall-vector-decoration_569013-2317.jpg');
+  background-color:black;
   background-size:cover;
   background-position:center;
   padding:12px;
@@ -65,7 +65,7 @@
 
 .MATCH_TEXT {
   margin-top: 55px;
-  font-family: 'Brush Script MT', cursive; /* style calligraphie */
+  font-family: 'Brush Script MT', cursive;
   font-size: 45px;
   color: white;
   text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
