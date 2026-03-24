@@ -1,9 +1,11 @@
 .ct-map {
   position: relative;
-  margin: auto;
+  margin-top: 250px;
+  margin-left: auto;
+  margin-right: auto;
   width:580px;
   height:450px;
-  background-image:url('https://i.ibb.co/WWfFB9vJ/shorefield-map-maquette.jpg');
+  background-image:url('https://i.redd.it/pkan4kt6wi2c1.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -71,6 +73,7 @@
   white-space: nowrap;
   letter-spacing: -3px;
   padding: 10px;
+  color: #1F2429;
   border-radius: 10px;
   transform: 
     translateX(-50%) 
@@ -157,13 +160,6 @@
     scale(1.3);
 }
 
-.box {
-  position: relative;
-  width: 200px;
-  height: 100px;
-  background: lightblue;
-}
-
 .pin::before {
   content: "";
   position: absolute;
@@ -174,16 +170,19 @@
 }
 
 .pin img{
+  position: absolute;
+  z-index:20;
   width:20px;
   height:20px;
   object-fit:cover;
   border-radius:50px;
+  transform: rotate(-45deg);
 }
 
 
 .tooltip-town {
   position: absolute;
-  bottom: 120%;
+  bottom: 100%;
   left: 50%;
   font-size:8px;
   letter-spacing: -3px;
@@ -193,11 +192,11 @@
   background-color: rgba(0,0,0,0.7);
   text-align: center;
   border-radius: 6px;
-  padding: 4px 10px;
+  padding: 0.4em 0.4em;
   opacity: 0;
   transform-origin: center;
   pointer-events: none;
-  transform: translateX(-50%) translateY(5px) rotate(-45deg);
+  transform: translateX(-50%) translateY(5px) rotate(-20deg);
   transition: opacity 0.2s ease, 
     transform 0.2s ease,
     letter-spacing 0.2s ease;
@@ -222,6 +221,23 @@
   top: 160px;
   left: 260px;
 }
+.northwood {
+  top: 30px;
+  left: 270px;
+}
+.wrightsville {
+  top: 130px;
+  left: 440px;
+}
+.harbor-row {
+  top: 300px;
+  left: 450px;
+}
+
+.southside {
+  top: 350px;
+  left: 300px;
+}
 
 /* EPINGLES DE COMMERCES */
 
@@ -243,7 +259,8 @@
 }
 .josephine {
   top: 100px;
-  left: 150px;  
+  left: 150px;
+  z-index:5;
 }
 .riverwalk {
   top: 90px;
@@ -256,4 +273,46 @@
 .princess {
   top: 40px;
   left: 220px;  
+}
+
+.musee {
+  top: 50px;
+  left: 280px;  
+}
+
+.screengems {
+  top: -150px;
+  left: 220px;  
+}
+.uscn {
+  top: -130px;
+  left: 260px;  
+}
+
+.lumina {
+  top: -60px;
+  left: 520px;  
+  z-index: 2;
+}
+.beach {
+  top: -120px;
+  left: 550px;  
+}
+
+.amphi {
+  top: -30px;
+  left: 490px;  
+}
+.cameron {
+  top: 40px;
+  left: 450px;  
+}
+
+.haunted {
+  top: 40px;
+  left: 250px;  
+}
+.hospital {
+  top: -50px;
+  left: 300px;  
 }
