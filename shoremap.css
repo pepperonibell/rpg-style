@@ -1,0 +1,259 @@
+.ct-map {
+  position: relative;
+  margin: auto;
+  width:580px;
+  height:450px;
+  background-image:url('https://i.ibb.co/WWfFB9vJ/shorefield-map-maquette.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.ct-city {
+  position: absolute;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: none;
+  padding: 5px;
+}
+
+.box-bulle {
+  position: relative;
+  background-color: none;
+  transform: translateY(0px);
+  transition: transform 0.25s ease;
+  width: 50px;
+  height: 50px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  overflow:hidden;
+  box-sizing: border-box;
+  font-size: 27px;
+  color: white;
+  border: 3px white solid;
+  box-shadow: 1px 2px 12px rgba(0,0,0,0.3);
+}
+
+.box-bulle i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box-bulle:hover {
+   transform:
+    translateY(2px) scale(1.05);
+}
+
+.box-bulle img {
+  width: 50px;
+  height: 50px; 
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50px;
+  border: 2px white solid;
+}
+
+.box-habitants {
+  position: absolute;
+  bottom: 100%;
+  z-index: 10;
+  left: 50%;
+  background-color: lightgrey;
+  font-family: arial;
+  font-size: 10px;
+  white-space: nowrap;
+  letter-spacing: -3px;
+  padding: 10px;
+  border-radius: 10px;
+  transform: 
+    translateX(-50%) 
+    translateY(10px) 
+    scale(0.95);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  opacity: 0;
+  pointer-events: none;
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease,
+    letter-spacing 0.3s ease;
+}
+ .box-habitants span {
+  font-size: 12px;
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: bold;
+  }
+
+.box-bulle:hover + .box-habitants {
+  opacity: 1;
+  transform: 
+    translateX(-50%) 
+    translateY(0) 
+    scale(1);
+    letter-spacing: 1px;
+}
+
+.box-habitants::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 6px;
+  border-style: solid;
+  border-color: lightgrey transparent transparent transparent;
+}
+
+.box-contact {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+  align-items: center;
+}
+
+.photo-contact {
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 5px;
+}
+
+.pin {
+  position: relative;
+ 	transform: translateX(-50%) rotate(45deg);
+  width: 20px;
+  height: 20px;
+  border:2px solid white;
+  background-color: white;
+  border-radius: 50% 50% 0% 50%;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease-out;
+}
+
+.pin i {
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  color:white;
+  font-size:13px;
+}
+
+.pin:hover {
+ 	transform: 
+    translateY(-20%) 
+    translateX(-50%) 
+    rotate(45deg) 
+    scale(1.3);
+}
+
+.box {
+  position: relative;
+  width: 200px;
+  height: 100px;
+  background: lightblue;
+}
+
+.pin::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: var(--circle-color, #3F5EFB);
+  border-radius: 50%;
+}
+
+.pin img{
+  width:20px;
+  height:20px;
+  object-fit:cover;
+  border-radius:50px;
+}
+
+
+.tooltip-town {
+  position: absolute;
+  bottom: 120%;
+  left: 50%;
+  font-size:8px;
+  letter-spacing: -3px;
+  white-space: nowrap;
+  font-family: arial;
+  color: white;
+  background-color: rgba(0,0,0,0.7);
+  text-align: center;
+  border-radius: 6px;
+  padding: 4px 10px;
+  opacity: 0;
+  transform-origin: center;
+  pointer-events: none;
+  transform: translateX(-50%) translateY(5px) rotate(-45deg);
+  transition: opacity 0.2s ease, 
+    transform 0.2s ease,
+    letter-spacing 0.2s ease;
+  transition-delay: 0.1s;
+}
+
+.pin:hover .tooltip-town {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+  letter-spacing: 1px;
+}
+
+
+
+/* BULLES VILLES */
+
+.riverfront {
+  top: 160px;
+  left: 70px;
+}
+.centreville {
+  top: 160px;
+  left: 260px;
+}
+
+/* EPINGLES DE COMMERCES */
+
+.portmania {
+  top: 60px;
+  left: 100px;
+}
+.resort {
+  top: 70px;
+  left: 130px;  
+}
+.capfear {
+  top: 70px;
+  left: 80px;  
+}
+.cotton {
+  top: 90px;
+  left: 60px;  
+}
+.josephine {
+  top: 100px;
+  left: 150px;  
+}
+.riverwalk {
+  top: 90px;
+  left: 180px;  
+}
+.cuirasse {
+  top: 90px;
+  left: 40px;  
+}
+.princess {
+  top: 40px;
+  left: 220px;  
+}
