@@ -1,11 +1,11 @@
 .ct-map {
   position: relative;
-  margin-top: 250px;
+  margin-top: 200px;
   margin-left: auto;
   margin-right: auto;
-  width:580px;
-  height:450px;
-  background-image:url('https://i.redd.it/pkan4kt6wi2c1.png');
+  width:700px;
+  height:502px;
+  background-image:url('https://i.ibb.co/ync1hpr6/shoremap.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -27,15 +27,15 @@
   background-color: none;
   transform: translateY(0px);
   transition: transform 0.25s ease;
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   display:flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
   overflow:hidden;
   box-sizing: border-box;
-  font-size: 27px;
+  font-size: 22px;
   color: white;
   border: 3px white solid;
   box-shadow: 1px 2px 12px rgba(0,0,0,0.3);
@@ -214,103 +214,111 @@
 /* BULLES VILLES */
 
 .riverfront {
-  top: 160px;
-  left: 70px;
+  top: 250px;
+  left: 300px;
 }
 .centreville {
-  top: 160px;
-  left: 260px;
-}
-.northwood {
-  top: 30px;
-  left: 270px;
-}
-.wrightsville {
-  top: 130px;
+  top: 200px;
   left: 440px;
 }
+.northwood {
+  top: 110px;
+  left: 290px;
+}
+.wrightsville {
+  top: 120px;
+  left: 550px;
+}
 .harbor-row {
-  top: 300px;
-  left: 450px;
+  top: 380px;
+  left: 340px;
 }
 
 .southside {
-  top: 350px;
-  left: 300px;
+  top: 330px;
+  left: 200px;
 }
 
 /* EPINGLES DE COMMERCES */
 
 .portmania {
-  top: 60px;
-  left: 100px;
+  z-index:5;
+  top: 210px;
+  left: 370px;
 }
-.resort {
-  top: 70px;
-  left: 130px;  
+.park {
+  z-index:5;
+  top: 250px;
+  left: 200px;  
 }
 .capfear {
-  top: 70px;
-  left: 80px;  
+  top: 210px;
+  left: 280px;  
 }
 .cotton {
-  top: 90px;
-  left: 60px;  
+  z-index: 5;
+  top: 180px;
+  left: 370px;  
 }
 .josephine {
-  top: 100px;
-  left: 150px;
+  z-index: 14;
+  top: 150px;
+  left: 410px;
   z-index:5;
 }
 .riverwalk {
-  top: 90px;
-  left: 180px;  
+  z-index:3;
+  top: 140px;
+  left: 400px;  
 }
 .cuirasse {
-  top: 90px;
-  left: 40px;  
+  z-index:4;
+  top: 50px;
+  left: 420px;  
 }
 .princess {
-  top: 40px;
-  left: 220px;  
+  z-index:1;
+  top: 10px;
+  left: 480px;  
 }
 
 .musee {
-  top: 50px;
-  left: 280px;  
+  top: 60px;
+  left: 440px;  
 }
 
 .screengems {
-  top: -150px;
+  top: -90px;
   left: 220px;  
 }
 .uscn {
-  top: -130px;
-  left: 260px;  
+  z-index:5;
+  top: -45px;
+  left: 510px;  
 }
 
 .lumina {
   top: -60px;
-  left: 520px;  
+  left: 580px;  
   z-index: 2;
 }
 .beach {
-  top: -120px;
-  left: 550px;  
+  top: -110px;
+  left: 620px;  
 }
 
 .amphi {
   top: -30px;
-  left: 490px;  
+  left: 460px;  
 }
 .cameron {
-  top: 40px;
-  left: 450px;  
+  top: 25px;
+  left: 330px;  
 }
 
 .haunted {
-  top: 40px;
-  left: 250px;  
+  top: 10px;
+  left: 140px;  
 }
 .hospital {
   top: -50px;
