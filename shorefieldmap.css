@@ -1,0 +1,355 @@
+.ct-map {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width:700px;
+  height:840px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  border-radius:10px;
+  box-shadow: 1px 3px 10px rgba(0,0,0,0.1);
+}
+
+.map-wrapper {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.cloud {
+  position: absolute;
+  bottom: -5%;
+  right: -10%;
+  width: 500px;
+  animation: cloudFloat 14s infinite;
+  opacity: 0.5;
+}
+
+@keyframes cloudFloat {
+  0% { transform: translateX(0) translateY(0) scale(1); }
+  50% { transform: translateX(30px) translateY(-30px) scale(1.05); }
+  100% { transform: translateX(0) translateY(0) scale(1); }
+}
+
+.bird {
+  position: absolute;
+  width: 60px;
+  top: 60%;
+  left: -100px;
+  animation: flyAcross 15s linear infinite;
+}
+
+@keyframes flyAcross {
+  0% {
+    transform: translateY(0);
+    left: 100%;
+    opacity: 1;
+  }
+  60% {
+    transform: translateY(400px);
+    left: 50%;
+    opacity: 1;
+  }
+  61% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    left: -100px;
+    opacity:0;
+  }
+}
+
+.bird-2 {
+  position: absolute;
+  width: 40px;
+  animation-delay: 3s;
+  top: 80%;
+  opacity: 0.9;
+  animation-duration: 13s;
+}
+
+.ct-city {
+  position: absolute;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: none;
+  padding: 5px;
+}
+
+.box-bulle {
+  position: relative;
+  background-color: none;
+  transform: translateY(0px);
+  transition: transform 0.25s ease;
+  width: 40px;
+  height: 40px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  overflow:hidden;
+  box-sizing: border-box;
+  font-size: 22px;
+  color: white;
+  border: 2px white solid;
+  box-shadow: 1px 2px 4px rgba(0,0,0,0.2);
+}
+
+.box-bulle i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box-bulle:hover {
+   transform:
+    translateY(2px) scale(1.05);
+}
+
+.box-bulle img {
+  width: 50px;
+  height: 50px; 
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50px;
+  border: 2px white solid;
+}
+
+.box-habitants {
+  position: absolute;
+  bottom: 100%;
+  z-index: 10;
+  left: 50%;
+  background: linear-gradient(0deg,#CBD2D6 0%, #EDEDED 80%);
+  font-family: arial;
+  font-size: 10px;
+  white-space: nowrap;
+  letter-spacing: -3px;
+  padding: 10px;
+  color: #1F2429;
+  border-radius: 10px;
+  transform: 
+    translateX(-50%) 
+    translateY(10px) 
+    scale(0.95);
+  box-shadow: 2px 5px 10px rgba(0,0,0,0.2);
+  opacity: 0;
+  pointer-events: none;
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease,
+    letter-spacing 0.3s ease;
+}
+ .box-habitants span {
+  font-size: 12px;
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: bold;
+  line-height:20px;
+  }
+
+.box-bulle:hover + .box-habitants {
+  opacity: 1;
+  transform: 
+    translateX(-50%) 
+    translateY(0) 
+    scale(1);
+    letter-spacing: 1px;
+}
+
+.box-habitants::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 6px;
+  border-style: solid;
+  border-color: #BEC9CC transparent transparent transparent;
+}
+
+.box-contact {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+  align-items: center;
+}
+
+.photo-contact {
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 5px;
+  box-shadow: 0px 0px 3px rgba(0,0,0,0.1);
+}
+
+.pin {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease-out;
+  z-index: 1;
+}
+
+.pin::before {
+  content: "";
+  position: absolute;
+ 	transform: rotate(45deg);
+  width: 15px;
+  height: 15px;
+  border:2px solid white;
+  background: var(--circle-color, #3F5EFB);
+  border-radius: 50% 50% 0% 50%;
+  box-shadow: 2px 2px 3px rgba(0,0,0,0.2);
+}
+
+.pin i {
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:white;
+  font-size:10px;
+}
+
+.pin:hover {
+ 	transform: scale(1.2);
+  z-index: 10;
+}
+
+.tooltip-town {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  width:100px;
+  font-size:8px;
+  letter-spacing: -3px;
+  font-family: arial;
+  color: black;
+  font-weight:bold;
+  background-color: rgba(211, 211, 211,0.8);
+  box-shadow: 2px 2px 3px rgba(0,0,0,0.2);
+  text-align: center;
+  line-height: 1.2;
+  margin:0;
+  border-radius: 6px;
+  opacity: 0;
+  padding: 5px;
+  pointer-events: none;
+  transform: translateX(-50%) translateY(-10px);
+  transition: 
+    opacity 0.2s ease, 
+    transform 0.2s ease,
+    letter-spacing 0.2s ease;
+  transition-delay: 0.1s;
+}
+
+.tooltip-town::after {
+  content: "";
+  position: absolute;
+  top: 99%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 6px;
+  border-style: solid;
+  border-color: rgba(211, 211, 211,0.8) transparent transparent transparent;
+}
+
+.pin img {
+  width:100px;
+  height:70px;
+  object-fit: cover; 
+  border-radius:10px;
+  margin-top:5px;
+  border:1px solid lightgrey;
+}
+
+.pin:hover .tooltip-town {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-10px);
+  letter-spacing: 1px;
+}
+
+/* BULLES VILLES */
+
+.riverfront {
+  top: 405px;
+  left: 220px;
+}
+.centreville {
+  top: 430px;
+  left: 340px;
+}
+.northwood {
+  top: 310px;
+  left: 290px;
+}
+.wrightsville {
+  top: 370px;
+  left: 480px;
+}
+.harbor-row {
+  top: 470px;
+  left: 270px;
+}
+
+.southside {
+  top: 505px;
+  left: 310px;
+}
+
+/* EPINGLES DE COMMERCES */
+
+.capfear {
+  top: 370px;
+  left: 300px;  
+}
+.cuirasse {
+  top: 330px;
+  left: 230px;  
+}
+.josephine {
+  top: 446px;
+  left: 260px;
+}
+.princess {
+  top: 390px;
+  left: 290px; 
+}
+.screengems {
+  top: 190px;
+  left: 350px; 
+}
+.uscn {
+  top: 215px;
+  left: 380px; 
+}
+.lumina {
+  top: 300px;
+  left: 537px;
+}
+.haunted {
+  top: 495px;
+  left: 241px; 
+}
+.carolina-beach {
+  top: 495px;
+  left: 290px; 
+}
+.kure-beach {
+  top: 580px;
+  left: 140px; 
+}
