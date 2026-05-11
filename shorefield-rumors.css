@@ -202,11 +202,8 @@
 .rumor.--1 {
   margin-right:45px;
 }
-.rumor.--2 {
-  margin-right:20px;
-}
 .rumor.--3 {
-  margin-left:20px;
+  margin-left:-20px;
 }
 
 .lieu {
