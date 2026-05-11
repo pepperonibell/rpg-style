@@ -1,0 +1,306 @@
+.nav-page {
+  margin:auto;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  width:460px;
+  height:33px;
+  background: radial-gradient(circle,rgba(242, 237, 240, 1) 50%, rgba(204, 217, 232, 1) 100%);
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0px 0px 3px #A8AEBD;
+  cursor: pointer;
+}
+
+.circles {
+  display: flex;
+  gap: 6px;
+}
+
+.circle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.red { background: #A15C7E; }
+.yellow { background: #E0A479; }
+.green { background: #7AB869; }
+
+.arrows {
+  display: flex;
+  margin-left: 5px;
+  align-items: center;
+}
+
+.arrow path {
+  stroke: #5B6370;
+}
+
+.arrow {
+  cursor: pointer;
+}
+.search {
+  height: 16px;
+  width: 280px;
+  margin: 0 12px;
+  background: white;
+  border-radius: 4px;
+  box-shadow: 0px 0px 3px #A8AEBD;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  height: 16px;
+}
+
+.btn {
+  font-size: 13px;
+  color: #898B96;
+  display: flex;
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  align-items: center;
+  text-align: center;
+  margin: 5px;
+  padding: 2px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 3px #A8AEBD;
+}
+
+.web-page {
+  margin:auto;
+  width:500px;
+  height:600px;
+  background-color:LemonChiffon;
+  padding-top: 20px; 
+  box-shadow: 0px 0px 3px #A8AEBD;
+  border-radius: 0px 0px 10px 10px;
+  background-size: contain;
+  background-image: url('https://i.pinimg.com/736x/94/5d/7a/945d7a106416efbfd550dff8480ae865.jpg');
+  cursor: pointer;
+}
+
+.blog-header {
+  font-family: "Playwrite AR Guides", system-ui;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  line-height: 45px;
+  background-color: #F5F5F5;
+  width: 340px;
+  height: 65px;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 1px 1px #836294;
+}
+.blog-title span{
+  font-size: 13px;
+  color: #A199BD;
+  font-family: "Betania Patmos", cursive;
+}
+
+.blog-title { 
+  color: #DB407A;
+  font-size: 25px;
+  margin-top: -15px;
+  margin-bottom: auto;
+}
+.container-btn {
+  font-family: "Betania Patmos", cursive;
+  display: flex;
+  margin-top: auto;      /* pousse vers le bas */
+  align-self: flex-end;  /* pousse à droite */
+  gap: 10px;
+}
+.box-btn {
+  display: flex;
+  height: 20px;
+  background-color: Lavender;
+  font-size: 12px;
+  align-items: center;
+  text-align: center;
+  padding: 0 10px;
+  border-radius: 3px;
+  border: 1px #CBBAD4 solid;
+  color: #6E5EAB;
+}
+.box-btn:hover {
+  color: #B56E93;
+}
+
+.blog-body {
+  display: flex;
+  justify-content: center; /* centre horizontalement */
+  align-items: flex-start; /* reste en haut */
+  gap: 20px;
+}
+
+.cont-profile {
+  width: 70px;
+  height: 400px;
+  background-color: LightCyan;
+  padding: 20px;
+  display: flex;
+  flex-direction: column; /* empile les rumors */
+  align-items: center; 
+  gap: 20px;
+  background-color: #F5F5F5;
+  box-shadow: 2px 2px 1px 3px #EDAFCE;
+}
+
+.cont-rumors {
+  width: 360px;
+  height: 400px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column; /* empile les rumors */
+  align-items: center; 
+  gap: 30px;
+  overflow: scroll;
+}
+
+.rumor {
+  position:relative;
+  font-family: "Sunshiney", cursive;
+  width: 250px;
+  padding: 25px;
+  padding-left: 50px;
+  padding-bottom: 15px;
+  letter-spacing: 1.3px;
+  font-size: 19px;
+  color: #8292B5;
+  background-color: #fff;
+      /* lignes horizontales */
+  background-image: 
+    /* lignes horizontales */
+    repeating-linear-gradient(
+      to bottom,
+      transparent,
+      transparent 23px,
+      #cfd8dc 24px
+    ),
+    /* ligne verticale rouge */
+    linear-gradient(
+      to right,
+      transparent 35px,
+      #ff6b6b 36px,
+      transparent 37px
+    );
+  border-radius: 15px;
+  border: inset 5px solid white;
+  box-shadow: inset 0 0 0 15px white;
+  line-height: 24px;
+}
+
+.rumor.--1 {
+  transform: rotate(1deg);
+}
+
+.rumor.--3 {
+  transform: rotate(-1.5deg);
+}
+.lieu {
+  position: absolute;
+  top: 2px;
+  right: -20px;
+  border-radius: 3px 3px 20px 3px;
+  padding-left: 15px;
+  padding-right: 12px;
+  padding-top: 2px;
+  padding-bottom: 4px;
+  color:#22228A;
+  border: 3px white solid;
+}
+.rumor.--1 .lieu {
+  top: 6px;
+  right: -20px;
+  background: #CAD6FA;
+  transform: rotate(-2deg);
+}
+.rumor.--2 .lieu {
+  top: 7px;
+  right: -14px;
+  background: #FFF9D1;
+  transform: rotate(3deg);
+}
+.rumor.--3 .lieu {
+  top: 4px;
+  right: -14px;
+  background: #FFC7EA;
+  transform: rotate(-4deg);
+}
+.date {
+  position: static;
+  display: block;
+  color: #344773;
+  width: fit-content;
+  margin-top: 18px;
+  margin-left: 10px;
+  background: linear-gradient(
+    transparent 60%,
+    rgba(255, 156, 255, 0.2) 60%
+  );
+}
+
+/* deco */
+.rumor.--1::before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: 100px;
+  transform: translateX(-50%) rotate(-2deg);
+  width: 60px;
+  height: 20px;
+  background: rgba(211, 221, 235, 0.3); /* couleur scotch */
+  backdrop-filter: blur(1px); /* effet plastique (optionnel) */
+  border-radius: 4px;
+}
+
+.rumor.--1::after {
+  content: "🌸";
+  position: absolute;
+  top: 30px;
+  left: -10px;
+  font-size: 24px;
+}
+
+
+/* deco */
+.rumor.--2::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 150px;
+  transform: translateX(-50%) rotate(+2deg);
+  width: 60px;
+  height: 20px;
+  background: rgba(211, 221, 235, 0.3); /* couleur scotch */
+  backdrop-filter: blur(1px); /* effet plastique (optionnel) */
+  border-radius: 4px;
+}
+
+.rumor.--2::after {
+  content: "🌷";
+  position: absolute;
+  top: 50px;
+  right: -12px;
+  font-size: 24px;
+  transform: rotate(15deg);
+}
+
+.rumor.--3::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 120px;
+  transform: translateX(-50%) rotate(1deg);
+  width: 75px;
+  height: 20px;
+  background: rgba(211, 221, 235, 0.3); /* couleur scotch */
+  backdrop-filter: blur(1px); /* effet plastique (optionnel) */
+  border-radius: 4px;
+}
